@@ -24,21 +24,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btm1"
         android:layout_width="@dimen/signicon"
         android:layout_height="@dimen/signicon"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintEnd_toStartOf="@+id/btm2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@drawable/logo_01" />
+        app:srcCompat="@drawable/logo_01"
+        tools:layout_editor_absoluteY="101dp" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/btm2"
         android:layout_width="@dimen/signicon"
         android:layout_height="@dimen/signicon"
         android:layout_marginStart="8dp"
@@ -48,25 +47,24 @@
         android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toEndOf="@+id/btm1"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:srcCompat="@drawable/logo_02" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/btm3"
         android:layout_width="@dimen/signicon"
         android:layout_height="@dimen/signicon"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton4"
+        app:layout_constraintEnd_toStartOf="@+id/btm4"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        app:srcCompat="@drawable/logo_03" />
+        app:srcCompat="@drawable/logo_03"
+        tools:layout_editor_absoluteY="189dp" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/btm4"
         android:layout_width="@dimen/signicon"
         android:layout_height="@dimen/signicon"
         android:layout_marginStart="8dp"
@@ -76,25 +74,24 @@
         android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintStart_toEndOf="@+id/btm3"
+        app:layout_constraintTop_toBottomOf="@+id/btm2"
         app:srcCompat="@drawable/logo_04" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/btm5"
         android:layout_width="@dimen/signicon"
         android:layout_height="@dimen/signicon"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        app:layout_constraintEnd_toStartOf="@+id/btm6"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
-        app:srcCompat="@drawable/logo_05" />
+        app:srcCompat="@drawable/logo_05"
+        tools:layout_editor_absoluteY="277dp" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/btm6"
         android:layout_width="@dimen/signicon"
         android:layout_height="@dimen/signicon"
         android:layout_marginStart="8dp"
@@ -104,25 +101,24 @@
         android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintStart_toEndOf="@+id/btm5"
+        app:layout_constraintTop_toBottomOf="@+id/btm4"
         app:srcCompat="@drawable/logo_06" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/btm7"
         android:layout_width="@dimen/signicon"
         android:layout_height="@dimen/signicon"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton8"
+        app:layout_constraintEnd_toStartOf="@+id/btm8"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton5"
-        app:srcCompat="@drawable/logo_07" />
+        app:srcCompat="@drawable/logo_07"
+        tools:layout_editor_absoluteY="365dp" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/btm8"
         android:layout_width="@dimen/signicon"
         android:layout_height="@dimen/signicon"
         android:layout_marginStart="8dp"
@@ -132,25 +128,27 @@
         android:layout_marginRight="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton7"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        app:layout_constraintStart_toEndOf="@+id/btm7"
+        app:layout_constraintTop_toBottomOf="@+id/btm6"
         app:srcCompat="@drawable/logo_08" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/btm9"
         android:layout_width="@dimen/signicon"
         android:layout_height="@dimen/signicon"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton10"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btm10"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton7"
+        app:layout_constraintTop_toBottomOf="@+id/btm7"
         app:srcCompat="@drawable/logo_09" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/btm10"
         android:layout_width="@dimen/signicon"
         android:layout_height="@dimen/signicon"
         android:layout_marginStart="8dp"
@@ -158,10 +156,12 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton9"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8"
+        app:layout_constraintStart_toEndOf="@+id/btm9"
+        app:layout_constraintTop_toBottomOf="@+id/btm8"
         app:srcCompat="@drawable/logo_10" />
 
 </android.support.constraint.ConstraintLayout>
