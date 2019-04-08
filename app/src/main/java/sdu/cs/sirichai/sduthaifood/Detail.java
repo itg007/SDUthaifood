@@ -3,6 +3,7 @@ package sdu.cs.sirichai.sduthaifood;
 import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,5 +24,10 @@ public class Detail extends AppCompatActivity {
         detailTextView.setText(getIntent().getStringExtra("Detail"));
         //logoImageView.setImageResource(getIntent().getExtras("logo",R.drawable.logo_01));
 
+
     }
-}
+
+    public void clickBack(View view) {
+        finish();
+    }//end clickBack
+}//end Class
