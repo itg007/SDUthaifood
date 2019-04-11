@@ -3,6 +3,7 @@ package sdu.cs.sirichai.sduthaifood;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Drive extends AppCompatActivity {
@@ -17,6 +18,7 @@ public class Drive extends AppCompatActivity {
 
         textView8.setText(getIntent().getStringExtra("drive"));
         textView10.setText(getIntent().getStringExtra("responsible"));
+
     }
 
     public void clickBack(View view) {

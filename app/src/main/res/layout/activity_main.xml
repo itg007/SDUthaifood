@@ -23,135 +23,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/btm1"
-        android:layout_width="@dimen/signicon"
-        android:layout_height="@dimen/signicon"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/btm2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@drawable/logo_01" />
-
-    <ImageButton
-        android:id="@+id/btm2"
-        android:layout_width="@dimen/signicon"
-        android:layout_height="@dimen/signicon"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btm1"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@drawable/logo_02" />
-
-    <ImageButton
-        android:id="@+id/btm3"
-        android:layout_width="@dimen/signicon"
-        android:layout_height="@dimen/signicon"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/btm4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btm1"
-        app:srcCompat="@drawable/logo_03" />
-
-    <ImageButton
-        android:id="@+id/btm4"
-        android:layout_width="@dimen/signicon"
-        android:layout_height="@dimen/signicon"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btm3"
-        app:srcCompat="@drawable/logo_04"
-        tools:layout_editor_absoluteY="189dp" />
-
-    <ImageButton
-        android:id="@+id/btm5"
-        android:layout_width="@dimen/signicon"
-        android:layout_height="@dimen/signicon"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/btm6"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btm3"
-        app:srcCompat="@drawable/logo_05" />
-
-    <ImageButton
-        android:id="@+id/btm6"
-        android:layout_width="@dimen/signicon"
-        android:layout_height="@dimen/signicon"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btm5"
-        app:srcCompat="@drawable/logo_06"
-        tools:layout_editor_absoluteY="277dp" />
-
-    <ImageButton
-        android:id="@+id/btm7"
-        android:layout_width="@dimen/signicon"
-        android:layout_height="@dimen/signicon"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/btm8"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo_07"
-        tools:layout_editor_absoluteY="365dp" />
-
-    <ImageButton
-        android:id="@+id/btm8"
-        android:layout_width="@dimen/signicon"
-        android:layout_height="@dimen/signicon"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btm7"
-        app:srcCompat="@drawable/logo_08"
-        tools:layout_editor_absoluteY="365dp" />
-
-    <ImageButton
-        android:id="@+id/btm9"
-        android:layout_width="@dimen/signicon"
-        android:layout_height="@dimen/signicon"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btm10"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btm7"
-        app:srcCompat="@drawable/logo_09" />
-
-    <ImageButton
-        android:id="@+id/btm10"
-        android:layout_width="@dimen/signicon"
-        android:layout_height="@dimen/signicon"
+    <ListView
+        android:id="@+id/livLogo"
+        android:layout_width="280dp"
+        android:layout_height="390dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -160,9 +35,7 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btm9"
-        app:layout_constraintTop_toBottomOf="@+id/btm8"
-        app:srcCompat="@drawable/logo_10" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 </android.support.constraint.ConstraintLayout>
