@@ -1,7 +1,6 @@
 package sdu.cs.sirichai.sduthaifood;
 
 import android.content.Intent;
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +11,9 @@ import android.widget.TextView;
 import org.w3c.dom.Text;
 
 public class Detail extends AppCompatActivity {
-    String[] approach1Strings,approach2Strings,approach3Strings, driveStrings;
+
+    //Explicit ประกาศตัวแปร
+    String tv1,tv2,tv3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,21 +30,32 @@ public class Detail extends AppCompatActivity {
         detailTextView.setText(getIntent().getStringExtra("Detail"));
         logoImageView.setImageResource(getIntent().getIntExtra("Logo",R.drawable.logo_01));
 
-        approach1Strings = getResources().getStringArray(R.array.approach1);
+        //รับค่าจาก Intent แล้วแปลค่าเป็น String เพื่อไปค่าไปหน้า info
+        tv1 = getIntent().getStringExtra("Approach1");
+        tv2 = getIntent().getStringExtra("Approach2");
+        tv3 = getIntent().getStringExtra("Approach3");
+
+        /*approach1Strings = getResources().getStringArray(R.array.approach1);
         approach2Strings = getResources().getStringArray(R.array.approach2);
         approach3Strings = getResources().getStringArray(R.array.approach3);
-        driveStrings = getResources().getStringArray(R.array.drive);
+        driveStrings = getResources().getStringArray(R.array.drive);*/
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Detail.this, Info.class);
-                startActivity(intent);
-            }
+
+                //ส่งข้อมูลไปหน้า info
+                Intent detaiIntent = new Intent(Detail.this, Info.class);
+                //ส่งข้อมูล
+                detaiIntent.putExtra("roach1",tv1);
+                detaiIntent.putExtra("roach2",tv2);
+                detaiIntent.putExtra("roach3",tv3);
+                //เริ่มส่งข้อมูล
+                startActivity(detaiIntent);
+            }//end onCreate
         });
 
-
-    }
+    }//end onCreate
 
     public void clickBack(View view) {
         finish();

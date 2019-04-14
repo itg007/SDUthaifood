@@ -25,8 +25,8 @@
 
     <TextView
         android:id="@+id/tv1"
-        android:layout_width="@dimen/signlogo"
-        android:layout_height="@dimen/signlogo"
+        android:layout_width="@dimen/signTextView"
+        android:layout_height="@dimen/signTextView"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -42,8 +42,8 @@
 
     <TextView
         android:id="@+id/tv2"
-        android:layout_width="@dimen/signlogo"
-        android:layout_height="@dimen/signlogo"
+        android:layout_width="@dimen/signTextView"
+        android:layout_height="@dimen/signTextView"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -53,24 +53,24 @@
         android:text="TextView"
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintHorizontal_bias="0.864"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv1" />
 
     <TextView
         android:id="@+id/tv3"
-        android:layout_width="@dimen/signlogo"
-        android:layout_height="@dimen/signlogo"
+        android:layout_width="@dimen/signTextView"
+        android:layout_height="@dimen/signTextView"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="#95FFFFFF"
         android:text="TextView"
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintHorizontal_bias="0.132"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv2" />
 

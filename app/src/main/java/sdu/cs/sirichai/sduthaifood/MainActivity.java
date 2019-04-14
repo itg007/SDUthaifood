@@ -3,7 +3,6 @@ package sdu.cs.sirichai.sduthaifood;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -11,14 +10,11 @@ import android.widget.ListView;
 public class MainActivity extends AppCompatActivity {
 
     //Explicit ประกาศตัวแปร
-
     int[] ints = new int[]{R.drawable.logo_01, R.drawable.logo_02, R.drawable.logo_03,
             R.drawable.logo_04, R.drawable.logo_05, R.drawable.logo_06, R.drawable.logo_07,
             R.drawable.logo_08, R.drawable.logo_09};
     String[] detailStrings ,approach1Strings,approach2Strings,approach3Strings, driveStrings, responsibleStrings;
     ListView listView;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,8 +51,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(detaiIntent);
             }
         });
-
-
 
     }//end onCreate
 }//end class
