@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     //Explicit ประกาศตัวแปร
     int[] ints = new int[]{R.drawable.logo_01, R.drawable.logo_02, R.drawable.logo_03,
             R.drawable.logo_04, R.drawable.logo_05, R.drawable.logo_06, R.drawable.logo_07,
-            R.drawable.logo_08, R.drawable.logo_09};
+            R.drawable.logo_08, R.drawable.logo_09,};
     String[] detailStrings ,approach1Strings,approach2Strings,approach3Strings, driveStrings, responsibleStrings;
     ListView listView;
 
@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(detaiIntent);
             }
         });
+
 
     }//end onCreate
 }//end class
