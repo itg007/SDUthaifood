@@ -16,7 +16,7 @@ public class Drive extends AppCompatActivity {
         TextView textView8 = findViewById(R.id.textView8);
         TextView textView10 = findViewById(R.id.textView10);
 
-        textView8.setText(getIntent().getStringExtra("drive"));
+        textView8.setText(getIntent().getStringExtra("Drive"));
         textView10.setText(getIntent().getStringExtra("responsible"));
 
     }

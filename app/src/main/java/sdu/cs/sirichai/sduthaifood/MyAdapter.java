@@ -8,6 +8,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 
 public class MyAdapter extends BaseAdapter {
+
+    //Explicit ประกาศตัวแปร
     Context context;
     int[] ints;
 

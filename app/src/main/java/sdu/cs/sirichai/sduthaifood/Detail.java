@@ -13,7 +13,7 @@ import org.w3c.dom.Text;
 public class Detail extends AppCompatActivity {
 
     //Explicit ประกาศตัวแปร
-    String tv1,tv2,tv3;
+    String tv1, tv2, tv3, dv, dv1, dv2, dv3, rp, rp1, rp2, rp3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,6 @@ public class Detail extends AppCompatActivity {
         ImageView logoImageView = findViewById(R.id.imvLogo);
         Button button = findViewById(R.id.btInfo);
 
-
         //รับค่าจาก Intent มาแสดงบน xml
         detailTextView.setText(getIntent().getStringExtra("Detail"));
         logoImageView.setImageResource(getIntent().getIntExtra("Logo",R.drawable.logo_01));
@@ -34,11 +33,15 @@ public class Detail extends AppCompatActivity {
         tv1 = getIntent().getStringExtra("Approach1");
         tv2 = getIntent().getStringExtra("Approach2");
         tv3 = getIntent().getStringExtra("Approach3");
+        //dv = getIntent().getStringExtra("Drive");
+        dv1 = getIntent().getStringExtra("Drive1");
+        dv2 = getIntent().getStringExtra("Drive2");
+        dv3 = getIntent().getStringExtra("Drive3");
+        //rp = getIntent().getStringExtra("responsible");
+        rp1 = getIntent().getStringExtra("responsible1");
+        rp2 = getIntent().getStringExtra("responsible2");
+        rp3 = getIntent().getStringExtra("responsible3");
 
-        /*approach1Strings = getResources().getStringArray(R.array.approach1);
-        approach2Strings = getResources().getStringArray(R.array.approach2);
-        approach3Strings = getResources().getStringArray(R.array.approach3);
-        driveStrings = getResources().getStringArray(R.array.drive);*/
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,9 +50,17 @@ public class Detail extends AppCompatActivity {
                 //ส่งข้อมูลไปหน้า info
                 Intent detaiIntent = new Intent(Detail.this, Info.class);
                 //ส่งข้อมูล
-                detaiIntent.putExtra("roach1",tv1);
-                detaiIntent.putExtra("roach2",tv2);
-                detaiIntent.putExtra("roach3",tv3);
+                detaiIntent.putExtra("roach1", tv1);
+                detaiIntent.putExtra("roach2", tv2);
+                detaiIntent.putExtra("roach3", tv3);
+                //detaiIntent.putExtra("Drive", dv);
+                detaiIntent.putExtra("Drive1", dv1);
+                detaiIntent.putExtra("Drive2", dv2);
+                detaiIntent.putExtra("Drive3", dv3);
+                //detaiIntent.putExtra("responsible", rp);
+                detaiIntent.putExtra("responsible1", rp1);
+                detaiIntent.putExtra("responsible2", rp2);
+                detaiIntent.putExtra("responsible3", rp3);
                 //เริ่มส่งข้อมูล
                 startActivity(detaiIntent);
             }//end onCreate
